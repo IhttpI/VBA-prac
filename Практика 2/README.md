@@ -2,13 +2,18 @@
 Задание 1
 ```vb
 Sub ex_1()
-    Dim a As Double, b As Double
+    Dim a As Double, b As Double, t As Double
+    Dim oldA As Double, oldB As Double
     a = CDbl(InputBox("A="))
     b = CDbl(InputBox("B="))
-
+    oldA = a: oldB = b
     If a > b Then
-        MsgBox "A больше B"
+        t = a
+        a = b
+        b = t
     End If
+    MsgBox "Было: A=" & oldA & ", B=" & oldB & vbCrLf & _
+           "Стало: A=" & a & ", B=" & b
 End Sub
 ```
 
