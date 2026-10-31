@@ -1,7 +1,8 @@
 # VBA-prac
-Option Explicit
-Задание 1
 
+Задание 1
+```vb
+Option Explicit
 	Sub ex1()
 	    Dim a As Double, V As Double, S As Double
 	    a = CDbl(InputBox("Введите длину ребра куба"))
@@ -9,9 +10,9 @@ Option Explicit
 	    S = 6 * a ^ 2
 	    MsgBox "Объём = " & V & vbCrLf & "Площадь поверхности = " & S    
 	End Sub
-
+```
 Задание 2
-
+```vb
 	Sub ex2()
 	    Dim raw As Double, yarn As Double, waste As Double, loss As Double
 	    raw = 12000
@@ -24,9 +25,9 @@ Option Explicit
 	           "Потери: " & loss & " кг"
 	           
 	End Sub
-
+```
 Задание 3
-
+```vb
 	Sub ex3()
 	    Dim L As Double, W As Double, r As Double
 	    Dim n As Long, fabric As Double, circles As Double, waste As Double
@@ -44,9 +45,9 @@ Option Explicit
 	           "Площадь отходов = " & waste & " м^2"
 	           
 	End Sub
-	
+```	
 Задание 4
-
+```vb
 	Sub ex4()
 	    Dim x1 As Double, y1 As Double, x2 As Double, y2 As Double, d As Double
 	    
@@ -60,8 +61,9 @@ Option Explicit
 	    MsgBox "Расстояние = " & d
 	
 	End Sub
+```
 Задание 5
-
+```vb
 	Sub ex5()
 	    Dim a As Double, b As Double, c As Double, t As Double
 	    
@@ -80,8 +82,9 @@ Option Explicit
 	    End If
 	    
 	End Sub
+```
 Задание 6
-
+```vb
 	Sub ex6()
 	    Dim productionPerMinute As Long, machines As Long, hours As Long, minutes As Long, total As Long
 	
@@ -93,6 +96,7 @@ Option Explicit
 	    total = productionPerMinute * machines * minutes
 	    
 	    MsgBox "Будет выпущено " & total & " тарелок."
+```
 	
 	    
 	End Sub
